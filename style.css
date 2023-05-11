@@ -1,0 +1,79 @@
+/* overall display size fixer */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* the search box upper space */
+.container {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    
+}
+/* background video tag */
+body{
+    background: url("bg1.mp4") no-repeat ; 
+    background-size: cover;;
+}
+
+/* video display setting */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+/* search box css */
+.search-area input {
+    height: 60px;
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    border: none;
+    opacity: 0.7;
+}
+
+/* the ouput area css */
+.detail-area {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: rgba(150, 167, 212, 0.5);
+}
+
+/* output area size */
+.row {
+    margin: 7px 10px;
+    font-size: 100px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#spinner {
+    width: 80px;
+    height: 80px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
